@@ -1,0 +1,71 @@
+.example-full-width {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+  }
+
+  .equal{
+	margin-top: 30px;
+  }
+  
+  .mat-radio-button ~ .mat-radio-button {
+	margin-left: 16px;
+  }
+
+.input-group-text{
+	font-size: 16px;
+}
+
+.navbar-dark{
+	font-size: 18px;
+	font-weight: 600;
+	color: #000;
+}
+
+.nav-item {
+	padding-left: 45px;
+}
+
+#new{
+	background-color: #e6e6e6;
+	padding: 20px;
+}
+#new .cards{
+ 	padding: 30px;
+ }
+
+#new img{
+ 	width: 50%;
+ }
+
+#new .card-header{
+ 	background-color: blue;
+ }
+
+#new h2{
+	text-align: center;
+	font-size: 24px;
+}
+
+#new hr{
+	background: blue;
+}
+
+#new p{
+	text-align: center;
+}
+#new .bolt{
+	font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 768px) 
+{
+	#new{
+	padding: 0px;
+}
+#new .cards{
+ 	padding: 0px;
+ }
+}

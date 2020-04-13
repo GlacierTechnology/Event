@@ -1,0 +1,61 @@
+<form [formGroup]="signInForm" *ngIf='!isValidUser' (ngSubmit)="VerifyUser()">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 purple">
+                <h1 class="light">Eventz360</h1>
+                <h3 class="lightt">Simple, powerful event software — just add people.</h3>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 contentAlign">
+                        <h1>Sign in</h1>
+                        <h2>Its Nice to see you again</h2>
+
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Email ID</mat-label>
+                            <input matInput placeholder="Enter E-Mail" type="email" formControlName="email">
+
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Password</mat-label>
+                            <input matInput placeholder="Please enter Password" type="password"
+                                formControlName="password">
+
+                        </mat-form-field>
+                        <a role="button" (click)="RedirectToFgtPwd()">Forgotten your Password?</a>
+                        <div class="cent"> <button mat-raised-button color="primary">Sign in</button></div>
+
+                        <br>
+                        <a href="">Dont have an account yet? Create one now.</a>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<!----------------------------Signin ends-------------------------->
+<form [formGroup]="fgtPwdForm" *ngIf='isValidUser && fgtPwd' (ngSubmit)="VerifyEmail()">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 contentAlign">
+                <h1>Forget your password?</h1>
+                <h3>Enter your registered email id. You will receive a verification code to reset your password.</h3>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email ID</mat-label>
+                    <input matInput placeholder="Enter Email ID" formControlName="fgtEmail">
+                    <mat-error>Please enter your email</mat-error>
+                </mat-form-field>
+
+
+                <div class="cent"> <button mat-raised-button color="primary">Send Verification Code</button></div><br>
+                <a href="">Try logging in again</a>
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</form>

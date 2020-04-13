@@ -1,0 +1,59 @@
+
+h2{
+    font-size: 23px;
+    margin-top: 30px;
+  }
+  
+  h4{
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  .example-full-width {
+    width: 100%;
+  
+  }
+
+ 
+  p{
+    color: grey;
+    margin-top: -10px;
+  }
+
+  example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.blue{
+  color: #673AB7;
+}
+
+.mat-card-title{
+  font-size: 17px;
+}
+
+.example-header-image {
+  background-image: url('../../../assets/img2.png');
+  background-size: cover;
+}
+.example-header-image1 {
+  background-image: url('../../../assets/img3.png');
+  background-size: cover;
+}
+.example-header-image2 {
+  background-image: url('../../../assets/img5.png');
+  background-size: cover;
+}
+.example-header-image3 {
+  background-image: url('../../../assets/img4.png');
+  background-size: cover;
+}
